@@ -17,7 +17,6 @@ app.get("/profs", function(req, res) {
     fs.readFile(filename, "utf8", function(err, data) {
         res.writeHead(200, {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*"
         });
         res.end(data);
     });
